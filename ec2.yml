@@ -80,7 +80,7 @@ Resources:
       Properties:
         ImageId: ami-04b4f1a9cf54c11d0
         InstanceType: t2.micro
-        KeyName: prueba
+        KeyName: devops2025
         SubnetId: !Ref Subnet
         SecurityGroupIds:
           - !Ref GrupoSeguridadJenkins
@@ -116,7 +116,7 @@ Resources:
      Properties: 
         ImageId: ami-04b4f1a9cf54c11d0
         InstanceType: t2.micro
-        KeyName: prueba
+        KeyName: devops2025
         SubnetId: !Ref Subnet
         SecurityGroupIds:
           - !Ref GrupoSeguridadApache
@@ -139,4 +139,5 @@ Resources:
             git clone https://github.com/cesarpalacios/JenkinsGTN.git
             cd JenkinsGTN
             docker compose up -d 
+
             sudo apt-get install openjdk-17-jre -y
